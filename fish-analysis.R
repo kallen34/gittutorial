@@ -12,3 +12,12 @@ fish %>%
 head(fish)
 
 #commit with message and push
+
+#create histogram of scale length, fill(color) by length_cat and facet_wrap by length_cat with one of my themes
+#commit and push to github and invite Chris to my github
+
+fish %>%
+  ggplot() +
+  geom_histogram(aes(scalelength, fill = length_cat)) +
+  facet_wrap(~length_cat, nrow = 1) +
+  theme_pub()
