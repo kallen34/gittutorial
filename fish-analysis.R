@@ -8,7 +8,7 @@ head(fish)
 #create new column in data called length_cat. length > 200 is big, otherwise small
 
 fish %>%
-  mutate(length_cat = if_else(length >= 200, "big", "small")) -> fish
+  mutate(length_cat = if_else(length >= 300, "big", "small")) -> fish
 head(fish)
 
 #commit with message and push
